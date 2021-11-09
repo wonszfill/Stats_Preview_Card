@@ -1,0 +1,47 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: hsl(233, 47%, 7%);
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 10% auto 10%;
+}
+
+.card {
+    grid-area: 2 / 2 / 3 / 3;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    color: #fff;
+    background: hsl(244, 38%, 16%);
+    
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-content h2 {
+    
+}
+
+
+
+/* attribution at the botttom */
+.attribution {
+    grid-area: 3 / 2 / 4 / 3; 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
